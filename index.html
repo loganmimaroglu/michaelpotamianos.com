@@ -14,6 +14,7 @@
         body {
             font-family: 'Times New Roman', Times, serif;
             margin: 40px;
+            background-color: rgb(199, 190, 164);
             text-align: center;
         }
         h1 {
@@ -25,11 +26,16 @@
             padding: 0;
         }
 
+        p {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
 
         /* Display list items inline */
         ul li {
             display: inline-block;
-            margin-right: 20px; /* Add some space between items */
+            margin-right: 5%; /* Add some space between items */
         }
 
         /* You can remove the margin from the last item if you want */
@@ -37,13 +43,50 @@
             margin-right: 0;
         }
 
-        a {
-            color: blue;
-            text-decoration: underline;
-        }
+        hr {
+      border-color: #3498db; /* Set the color for the horizontal rule */
+    }
+      .vertical-line {
+        position: absolute;
+        right: 20%;
+        top: 19%;
+        width: 2px; /* Adjust the width of the line as needed */
+        height: 141%; /* Set the height to fill the entire viewport */
+        background-color: #3498db; /* Set the color for the vertical line */
+    }
+    .vertical-line2 {
+        position: absolute;
+        left: 20%;
+        top: 19%;
+        width: 2px; /* Adjust the width of the line as needed */
+        height: 141%; /* Set the height to fill the entire viewport */
+        background-color: #3498db; /* Set the color for the vertical line */
+    }
+    .diagonal-line {
+        top: 25%;
+        right: 5%;
+        position: fixed;
+        border-left: 100px solid transparent; /* Adjust the width as needed */
+        border-right: 100px solid transparent; /* Adjust the width as needed */
+        border-bottom: 100px solid rgba(52, 152, 219, .5); /* Adjust the color and height as needed */
+        transform-origin: center;
+        transition: transform 0.1s; /* Add a transition for smooth rotation */
+    }
+
+    .diagonal-line2 {
+        top: 25%;
+        left: 5%;
+        position: fixed;
+        border-left: 100px solid transparent; /* Adjust the width as needed */
+        border-right: 100px solid transparent; /* Adjust the width as needed */
+        border-bottom: 100px solid rgba(52, 152, 219, .5); /* Adjust the color and height as needed */
+        transform-origin: center;
+        transition: transform 0.1s; /* Add a transition for smooth rotation */
+    }
     </style>
 </head>
-<h1>Tutoring by Michael Potamianos</h1>
+
+<h1>Tutoring By Michael</h1>
 <hr>
 <ul>
     <li><a href="https://www.linkedin.com/in/michaelpotamianos/" target = "_blank">Linkedin</a></li>
@@ -51,17 +94,32 @@
     <li><a href="https://outlook.office.com/bookwithme/user/baa31667bd2a4da89b7a0248c43a9d94@syr.edu?anonymous&ep=plink" target = "_blank">Bookings</a></li>
 </ul>
 <hr>
+<div class="vertical-line"></div>
+<div class="vertical-line2"></div>
 
+<div class="diagonal-line" id="diagonal-line"></div>
+<div class="diagonal-line2" id="diagonal-line2"></div>
 <section id="about">
-    <h2>About Me</h2>
-    <p>I'm studying Mathematics and Finance and this will be my third year tutoring. Early on I became the friend who'd helped with the homework. That's when I saw the opportunity to profit from it. Since, I've tutored more than 50 kids in Finance, Statistics, and Calculus. I've always enjoyed tutoring; to me it's a combination of teaching, problem solving and having a postitive impact on my community. <br> <a href="https://www.linkedin.com/in/michaelpotamianos/" target = "_blank">Linkedin</a></p>
-    <h1>Tutoring Services</h1>
-    <h3>- 1 on 1 Tutoring -</a></h3>
-    <p>Specialized in FIN256, Statistics, and Calculus. <br>$80/hr - Includes answering of questions throughout the week. <br> <a href="https://outlook.office.com/bookwithme/user/baa31667bd2a4da89b7a0248c43a9d94@syr.edu?anonymous&ep=plink" target = "_blank">Book here</a></p>
-    <h3>- Group Tutoring -</h3>
-    <p>Email me if you have a group. <br> <a href="mailto:contact@michaelpotamianos.com" target = "_blank">contact@michaelpotamianos.com</a></p>
+    <h2>About Michael</h2>
+    <p>Michael Potamianos, a dedicated student of Mathematics and Finance, embarks on his third year as a tutor. His journey began as the friend who generously offered homework assistance, but it quickly evolved into a passion with a purpose. Michael saw an opportunity not just to profit but also to make a profound difference. With over 50 successful tutoring experiences in Finance, Statistics, and Calculus, Michael's commitment to education has flourished. He finds immense joy in tutoring—a fusion of teaching, problem-solving, and leaving a positive impact on his community. <br> <a href="https://www.linkedin.com/in/michaelpotamianos/" target = "_blank">Linkedin</a></p>
+    <br>
+    <h1>Mission</h1>
+    <p>Michael's mission is one fully devoted to your academic success. Through fostering a collaborative and empathetic environment, the goal is to have a conversation, not just a lecture. He believes in the power of meaningful dialogue and mentorship, aiming to create an education atmosphere where questions are encouraged. 
+        Michael's approach is centered on empowering students to take charge of their learning journey while building a solid foundation in Mathematics and Finance.
+    </p>
+    <br>
+    <div>
+        <h1>Tutoring - Finance and Math </h1>
+        <h3>- 1 on 1 Tutoring -</h3>
+        <p>$80 Session<br> Each of Michael's tutoring sessions, lasting a maximum of two hours, is tailored to the student's unique needs and preferences. We emphasize active learning through engaging discussions and collaborative problem-solving. The traditional approach leverages the student's own homework questions as practical examples, building a solid foundation for independent academic success. <br>  <a href="https://outlook.office.com/bookwithme/user/baa31667bd2a4da89b7a0248c43a9d94@syr.edu?anonymous&ep=plink" target = "_blank">Book here</a></p>
+        <br>
+        <h3>- Group Tutoring -</h3>
+        <p>In the group tutoring sessions, we provide flexible and collaborative learning at varying prices depending on the number of students. Each session is designed for engaging and efficient group study. Active participation is encouraged, promoting collective discussion and practical learning through real-world examples. Whether you already have a group or are looking to join one, feel free to email Michael for more information. He's interested in accommodating your needs and helping you achieve your educational goals.<br> <a href="mailto:contact@michaelpotamianos.com" target = "_blank">contact@michaelpotamianos.com</a></p>
+    </div>
     <br>
     <br>
+    <h3>Message from Michael</h3>
+    <p>"The challenges in your finance class make mastering it more rewarding. Seek help, as it accelerates the learning process. Embrace the depth of the material—it's the foundation of finance knowledge. Those who actively seek assistance, inquire, and confront difficulties will be rewarded. Mastering this class lays the essential groundwork for future finance courses, building a strong knowledge foundation. Don't wait to get the help you need now. Your financial education is just beginning, and the initial investment in knowledge has the power to compound over time."</p>
     <br>
     <h4>Check my <a href="https://outlook.office.com/bookwithme/user/baa31667bd2a4da89b7a0248c43a9d94@syr.edu?anonymous&ep=plink" target = "_blank">calendar</a> or <a href="mailto:contact@michaelpotamianos.com" target = "_blank">email</a> me any questions.</h4>
 </section>
@@ -70,6 +128,23 @@
     <h2>Contact</h2>
     <p>Email me at <a href="mailto:contact@michaelpotamianos.com" target = "_blank">contact@michaelpotamianos.com</a> or schedule a session <a href="https://outlook.office.com/bookwithme/user/baa31667bd2a4da89b7a0248c43a9d94@syr.edu?anonymous&ep=plink" target = "_blank">Bookings</a>.</p>
 </section>
+
+<script>
+    const diagonalLine = document.getElementById('diagonal-line');
+    const diagonalLine2 = document.getElementById('diagonal-line2');
+
+
+    // Function to rotate the diagonal line based on scroll position
+    function rotateDiagonalLine() {
+      const scrollPosition = window.scrollY;
+      const rotationAngle = scrollPosition;
+      diagonalLine.style.transform = `rotate(${rotationAngle}deg)`;
+      diagonalLine2.style.transform = `rotate(-${rotationAngle}deg)`; // Reverse rotation for the second line
+    }
+
+    // Attach the event listener to the scroll event
+    window.addEventListener('scroll', rotateDiagonalLine);
+  </script>
 
 <footer>
     <small>&copy; 2023 Glustx LLC. All rights reserved.</small>

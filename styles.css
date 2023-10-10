@@ -1,0 +1,102 @@
+/*This will the stick class like a freeze in excel*/
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  padding: 10px;
+  background-color: #f0feff;
+  border: 10px solid #4CAF50;
+  font-size: 100px;
+  text-align: center;
+}
+/*scrolling text box*/
+div.overflow {
+  position: relative;
+  left: 40%;
+  width: 20%;
+  height: 15%;
+  background-color: coral;
+  overflow: scroll;
+}
+/*This will put what ever is here anywhere on the screen*/
+div.fixed {
+  position: absolute;
+  top: 10px;
+  right: 10%;
+  padding: 10px;
+  background-color: #f0feff;
+  border: 10px solid #4CAF50;
+}
+
+img {
+  opacity: .5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+ul {
+  position: fixed;
+  top: 10%;
+  width: ;
+  padding: .25%;
+  border: 2px solid red;
+  background-color: #dddddd;
+  font-size: 50px;
+}
+
+ul:hover{
+  transform: translate(300px, 300px);
+}
+li {
+  display: inline;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+div.animate {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  
+}
+
+<style>
+  .cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+  }
+
+  .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 255, 0.6);
+    border: 1px solid #000;
+  }
+
+  .front  { transform: translateZ(50px); }
+  .back   { transform: translateZ(-50px) rotateY(180deg); }
+  .right  { transform: rotateY(-90deg) translateZ(50px); }
+  .left   { transform: rotateY(90deg) translateZ(50px); }
+  .top    { transform: rotateX(90deg) translateZ(50px); }
+  .bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+  @keyframes spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+  }
+</style>
