@@ -11,89 +11,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael (Maki) Potamianos</title>
     <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 40px;
-            background-color: rgb(199, 190, 164);
+
+        .top-third {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            gap: 0; /* no extra space between lines */
         }
-        h1 {
-            color: #333;
-        }
-        /* Remove the default list styling */
-        ul {
-            list-style-type: none;
+
+        .top-third h1{
+            margin: 0;
             padding: 0;
+            line-height: .9;
+        }
+        .top-third h2{
+            margin-top: 1.5rem;
+            padding: 0;
+            line-height: .9;
         }
 
-        p {
-            margin-left: 20%;
-            margin-right: 20%;
+        .top-third h3{
+            margin-top: 4rem;
+            padding: 0;
+            line-height: .9;
         }
 
-
-        /* Display list items inline */
-        ul li {
-            display: inline-block;
-            margin-right: 5%; /* Add some space between items */
+        .top-third h4 {
+            margin: 0;
+            padding: 0;
+            line-height: .9;
         }
 
-        /* You can remove the margin from the last item if you want */
-        ul li:last-child {
-            margin-right: 0;
+        /* Customize each heading individually */
+        .top-third h1 {
+            font-size: 5rem;
+            color: #333333;
+            font-weight: 500;
         }
 
-        hr {
-      border-color: #3498db; /* Set the color for the horizontal rule */
-    }
-      .vertical-line {
-        position: absolute;
-        right: 20%;
-        top: 19%;
-        width: 2px; /* Adjust the width of the line as needed */
-        height: 141%; /* Set the height to fill the entire viewport */
-        background-color: #3498db; /* Set the color for the vertical line */
-    }
-    .vertical-line2 {
-        position: absolute;
-        left: 20%;
-        top: 19%;
-        width: 2px; /* Adjust the width of the line as needed */
-        height: 141%; /* Set the height to fill the entire viewport */
-        background-color: #3498db; /* Set the color for the vertical line */
-    }
-    .diagonal-line {
-        top: 25%;
-        right: 5%;
-        position: fixed;
-        border-left: 100px solid transparent; /* Adjust the width as needed */
-        border-right: 100px solid transparent; /* Adjust the width as needed */
-        border-bottom: 100px solid rgba(52, 152, 219, .5); /* Adjust the color and height as needed */
-        transform-origin: center;
-        transition: transform 0.1s; /* Add a transition for smooth rotation */
+        .top-third h2 {
+            font-size: 2.2rem;
+            color: #000000;
+            letter-spacing: .2em;
+        }
+
+        .top-third h3 {
+            font-size: 2.5rem;
+            color: #333333;
+            font-weight: 600;
+            letter-spacing: .08em;
+        }
+
+        .top-third h4 {
+            font-size: 1.3rem;
+            color: #000000;
+            font-weight: 600;
+            letter-spacing: .1em;
+        }
+
+        a {
+        color: black;
+        text-decoration: none; /* removes underline */
     }
 
-    .diagonal-line2 {
-        top: 25%;
-        left: 5%;
-        position: fixed;
-        border-left: 100px solid transparent; /* Adjust the width as needed */
-        border-right: 100px solid transparent; /* Adjust the width as needed */
-        border-bottom: 100px solid rgba(52, 152, 219, .5); /* Adjust the color and height as needed */
-        transform-origin: center;
-        transition: transform 0.1s; /* Add a transition for smooth rotation */
-    }
+
+
     </style>
 </head>
+<body>
+    <div class="top-third">
+        <h1>Michael Potamianos</h1>
+        <h2>BS Mathematics & Finance</h2>
+        <h3>Tutor of Calculus, Statistics & Finance</h3>
+        <h4><a href="mailto:contact@michaelpotamianos.com" target = "_blank">contact@michaelpotamianos.com</a> <a href="tel:+13157446612">315.744.6612</a></h4>
+    </div>
+</body>
 
-<h1>Tutoring By Michael</h1>
-<hr>
-<ul>
-    <li><a href="https://www.linkedin.com/in/michaelpotamianos/" target = "_blank">Linkedin</a></li>
-    <li><a href="mailto:contact@michaelpotamianos.com" target = "_blank">Contact</a></li>
-    <li><a href="https://outlook.office.com/bookwithme/user/baa31667bd2a4da89b7a0248c43a9d94@syr.edu?anonymous&ep=plink" target = "_blank">Bookings</a></li>
-</ul>
-<hr>
+<!-- 
+    <hr>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/michaelpotamianos/" target = "_blank">Linkedin</a></li>
+        <li><a href="mailto:contact@michaelpotamianos.com" target = "_blank">Contact</a></li>
+        <li><a href="https://outlook.office.com/bookwithme/user/baa31667bd2a4da89b7a0248c43a9d94@syr.edu?anonymous&ep=plink" target = "_blank">Bookings</a></li>
+    </ul>
+    <hr>
 
 <section id="about">
     <h2>About Michael</h2>
@@ -145,3 +149,4 @@
 <footer>
     <small>&copy; 2023 Glustx LLC. All rights reserved.</small>
 </footer>
+-->
